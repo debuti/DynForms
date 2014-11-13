@@ -1,0 +1,24 @@
+<?!= HtmlService.createHtmlOutputFromFile('style').getContent(); ?>
+
+    
+<header>
+<h1>Custom forms</h1>
+</header>
+
+<section>
+<div id ="content">
+<? var data = retrieveSheetsList(); ?>
+<? var scriptUrl = ScriptApp.getService().getUrl(); ?>
+<p>
+  <? for (var i = 0; i < data.length; i++) { ?>
+     <a href="<?=  scriptUrl + "?sheet=" + data[i] ?>"><?= data[i] ?></a>
+     <br/>
+  <? } ?>
+</p>
+</div>
+
+</section>
+
+<footer>
+Copyright © nubuza.com
+</footer>
