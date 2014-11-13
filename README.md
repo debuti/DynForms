@@ -26,14 +26,14 @@ Usage
          "Mandatory":"",
          "Items":[ "", ""]
         }
-```
-
+  
   Type: One of [autoincrement|autodate|autotime|autodatetime|number|text|textarea|checkbox|date|time|select]
   Title: The title you want to show
   Description currently not used
   DefValue: The default value for the field
   Mandatory: If this field have to be provided
   Items: Only if the type is select, the selectable items
+```
 
 - Send the link to your friends!
 
